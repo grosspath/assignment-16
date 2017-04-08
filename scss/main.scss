@@ -1,16 +1,60 @@
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
+.initialTimerView {
+  color: #fcff7c;
+  font-size: 100px;
+  position: relative;
+  top: 300px;
+  left: 40%;
+}
 
 .pomodoro {
-  height: 1100px;
-  width: 1100px;
+  position: absolute;
   background-image: url(../images/tomato-red-silhouette.svg);
   background-repeat: no-repeat;
-  margin-top:  -160px;
-  margin-left: 160px;
+  background-size: cover;
+  margin: 0 auto;
+  width: 1100px;
+  height: 1100px;
+  padding: 150px 3px;
+}
+
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  background-color: white;
+  width: 90%;
+}
+
+input {
+  position: relative;
+  left: 35%;
+  width: 560px;
+  border-style: none;
+  border-bottom: 4px solid grey;
+  font-size: 30px;
+  padding-top: 40px;
+  outline: none;
+}
+
+.push {
+  position: relative;
+  top: -8px;
+  right: -225%;
+  cursor: pointer;
+  color: white;
+  background-color: #3a99c1;
+  width: 80px;
+  height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 8px;
+
 }
 
 .nav-bar_text-input,
@@ -19,76 +63,39 @@ input,
   display: inline-block;
 }
 
-
-input {
-  width: 800px;
-  height: 44px;
-  border: none;
-  outline: 0;
-  background: white;
-  border-bottom: 4px solid grey;
-  margin-right: -4px;
-  margin-left: 200px;
-  font-size: 20px;
-  vertical-align: middle;
-
-}
-.push {
-  color: white;
-  background-color: #3a99c1;
-  width: 100px;
-  height: 44px;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 4px;
-
-}
-
-.timer {
-  position: absolute;
-  top: 340px;
-  left: 500px;
-
-  color: #fcff7c;
-  text-shadow: 8px 8px 4px 4px grey;
-  font-size: 120px;
-  font-weight: 400;
-}
-
 .background-bar_plain {
   position: relative;
-  top: 680px;
+  top: 274px;
   background-color: #e5c9c9;
   height: 20px;
-  width: 948px;
-
-  margin-left: 18px;
-  border-radius: 0 0 3px 3px;
-}
-
-.nav-bar {
-  position: absolute;
-  top: 800px;
-  height: 200px;
-  background-color: white;
-}
-.background-bar_with-text {
-  font-size: 40px;
-  margin-top: 620px;
-  margin-left: 260px;
+  width: 97%;
+  margin-left: 19px;
+  border-radius: 0 0 5px 3px;
 }
 
 .wider {
-  height: 60px;
+  position: relative;
+  top: 274px;
   background-color: #e5c9c9;
+  height: 60px;
+  width: 97%;
+  margin-left: 19px;
+  border-radius: 0 0 5px 5px;
   color: black;
-  font-size: 20px;
   font-size: 40px;
   text-align: center;
-
-
+  padding: 6px;
 }
+
 .hide-it {
   display: none;
+}
+
+h1 {
+  position: relative;
+  top: 340px;
+  left: 120px;
+  font-size: 100px;
+  color: #FEC900;
+  margin-bottom: -100px;
 }
